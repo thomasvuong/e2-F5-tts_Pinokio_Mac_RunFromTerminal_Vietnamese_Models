@@ -1,0 +1,80 @@
+node_modules
+.DS_Store
+
+# Model files (too large for git) - CRITICAL: Do not track these!
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+**/ckpts/
+ckpts/
+app/ckpts/
+app/ckpts/**/*
+**/ckpts/**/*.safetensors
+**/ckpts/**/*.pt
+**/ckpts/**/*.pth
+
+# Cache directories - CRITICAL: Do not track these!
+cache/
+**/cache/
+app/cache/
+cache/**/*
+*.cache
+**/*.cache
+
+# HuggingFace cache
+HF_HOME/
+**/HF_HOME/
+cache/HF_HOME/
+**/HF_HOME/**/*
+
+# Environment and virtual environments - CRITICAL: Do not track these!
+env/
+**/env/
+app/env/
+venv/
+.venv/
+**/venv/
+**/.venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+# Python packages in env (especially large ones)
+**/env/lib/
+**/env/lib/python*/
+**/env/lib/python*/site-packages/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# History files (editor backups)
+.history/
+*.history
+.history/**/*
+
+# Large data files
+**/data/
+**/datasets/
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Model checkpoints (redundant but explicit)
+model_*.safetensors
+model_*.pt
+model_*.pth
+**/model_*.safetensors
+**/model_*.pt
+**/model_*.pth
